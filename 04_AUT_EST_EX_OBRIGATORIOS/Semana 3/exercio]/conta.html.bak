@@ -1,0 +1,17 @@
+<html>
+
+<script src="calcular.js"></script>
+
+digite a velocidade inicial: 
+
+<form action="javaScript:GetVelocidade()">
+	<input id="Velocidade">
+
+<p>Altura Maxima:</p>
+<p>Tempo de Subida:</p>
+
+</form>
+
+
+
+</html>
