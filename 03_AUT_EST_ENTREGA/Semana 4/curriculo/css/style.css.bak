@@ -1,0 +1,23 @@
+﻿/************************************************************************************************
+ SITE WEB
+************************************************************************************************/
+
+h1, html {
+	background-color: #DCDCDC;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h3, html { 
+	color: #696969;
+	font size: +5
+}
+
+p, html { 
+	color: black;
+	
+}
+hr { 
+	border: 3px solid; 
+	background: black;
+	}
