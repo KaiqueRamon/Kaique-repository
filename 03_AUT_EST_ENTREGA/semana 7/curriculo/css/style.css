@@ -1,16 +1,87 @@
-﻿/************************************************************************************************
- SITE WEB
-************************************************************************************************/
+﻿img{
+	border-radius: 50%;
+	width: 200px;
+ 	height: 200px;
+
+}
+
+#site{
+	/* Definimos a largura da página */
+	width:1200px;
+	/* Definirmos a altura da página*/
+	height:700px;
+	/* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+	/*top : posição de cima */
+	margin-top:0;
+	/* left: posição de esquerda*/
+	margin-left:auto;
+	/* bottom : posição de baixo */
+	margin-bottom:0;
+	/* right : posição de direita */
+	margin-right:auto;
+	/* Aqui definiremos a cor de fundo da página */
+	background-color:#666;
+  }
+#center{
+	text-align: center;
+}
+#titulo{
+	text-align: center;
+}
+#historico{
+	 /*Novamente definimos a largura da div*/
+	 width:600px;
+	 /* altura da div */
+	 height:900px;
+	 /* O atributo Float é utilizado para fazermos o nosso bloco(div)
+	 literalmente flutue e se posicione onde queremos na página,
+	 quando escolhemos left, dizemos que esse bloco irá se posicionar na
+	 parte esquerda da página */
+	 float:left;
+	 /* Cor de fundo da div */
+	 background-color:#FF0;
+
+	 
+}
+
+#mar{
+	margin: 2%;
+
+}
+#formacao{
+	 /* altura da div */
+	
+	height:400px;
+	width: 600px;
+	float: left;
+	background-color: aqua;
+}
+#social{
+	 /*Novamente definimos a largura da div*/
+	 width:600px;
+	 /* altura da div */
+	 height:500px;
+	
+	 float:left;
+	 /* Cor de fundo da div */
+	 background-color:#F00;
+}
+#emprego{
+	/*Novamente definimos a largura da div*/
+	width:1200px;
+	/* Cor de fundo da div */
+	background-color:#0F0;
+}
 
 h1, html {
-	background-color: white;
+	
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 h3, html { 
 	color: #696969;
-	font size: +5
+	
 }
 
 p, html { 
@@ -21,3 +92,32 @@ hr {
 	border: 3px solid; 
 	background: black;
 	}
+#clicavel, #clicavel2,
+#clicavel3, #clicavel4{
+		cursor: pointer;
+		}
+		
+#clicavel:hover,
+#clicavel2:hover,
+#clicavel3:hover,
+#clicavel4:hover{
+		color: red;
+		}
+		
+#clicavel:active,
+#clicavel2:active,
+#clicavel3:active,
+#clicavel4:active{
+		color: blue;
+		}
+
+
+#titulo{
+	
+	/*Novamente definimos a largura da div*/
+	width:1200px;
+	/* altura da div */
+	height:100px;
+	/* Cor de fundo da div */
+	background-color:#00F;
+}

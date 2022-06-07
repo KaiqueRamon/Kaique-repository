@@ -1,10 +1,15 @@
- function show(){
+$("#clicavel").click(function(){
+  $("#trabalho1").toggle(1000);
+});
 
-    document.getElementById("emprego1").innerHTML += "<ul> <li> Controle de almoxarifado, estoque e compras de matéria-prima <li> Cozinhador de granola (separar os ingredientes e cozinhar o produto) <li> Embalador de granola (empacotadora Golpack) <li> Atendimento ao cliente na barraca de açaí (operar o caixa e despachar a mercadoria para outras lojas) <li> Ajudante de TI no escritório (formatar PCs, instalar programas, consertar impressoras e emitir NF) </ul>"
- }
+$("#clicavel2").click(function(){
+  $("#trabalho2").toggle(1000);
+});
 
- function show2(){
-   $("#emprego1").hide();
-   
- }
+$("#clicavel3").click(function(){
+  $("#trabalho3").toggle(1000);
+});
 
+$("#clicavel4").click(function(){
+  $("#trabalho4").toggle(1000);
+});
