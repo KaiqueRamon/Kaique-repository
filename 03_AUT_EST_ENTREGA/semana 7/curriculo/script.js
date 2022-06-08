@@ -13,3 +13,8 @@ $("#clicavel3").click(function(){
 $("#clicavel4").click(function(){
   $("#trabalho4").toggle(1000);
 });
+
+$("#clicavel5").click(function(){
+  $("#contrato").toggle(500);
+  $('#contrato').css({'color': 'blue'}); 
+})
