@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conta</title>
+</head>
+    <p>digite um numero:</p>
+    <input id="num1">
+    <p>escolha a operação</p>
+    <select id="operacao">
+        <option id="soma">+</option>
+        <option id="menos">-</option>
+        <option id="multi">*</option>
+        <option id="divi">/</option>
+        <option id="por">%</option>
+    </select>
+    <p>digite um numero:</p>
+    <input id="num2">
+    <button onclick="conta()">calcular</button>
+
+    <p id="resul">Resultado:</p>
+
+<body>
+    <script>
+
+
+        function conta(){
+
+         var numu1 = parseInt(document.querySelector("#num1").value);
+         var numu2 = parseInt(document.querySelector("#num2").value);
+
+         var opera =document.getElementById("operacao").value;
+
+            if(opera == "+"){
+               var res= numu1 + numu2; 
+            }
+            else if (opera =="-"){
+                var res = numu1 - numu2;
+            }
+            else if (opera =="*"){
+                var res = numu1 * numu2;
+            }
+            else if (opera =="/"){
+                var res = numu1 / numu2;
+            }
+            else if (opera =="%"){
+                var res = numu1 % numu2;
+            }
+
+            var resulta = document.getElementById("resul");
+            resulta.innerHTML = "Resultado:" + res;
+
+
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

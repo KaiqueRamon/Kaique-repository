@@ -1,0 +1,43 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p>Escreva numeros aleatorios separados por virgula</p>
+        <input id="numeros"></div><br>
+
+        <p>Escolha um numeto dos quais voce escreveu</p>
+        <input id="descobrirPosicao" ><br><br>
+        <button onclick="resultado()">Clique aqui </button><br><br>
+        
+        <p id="lista"></p>
+        <p id="posicao"></p>
+    </body>
+    <script>
+        function resultado() {
+    var resultado = ""
+    var lista = document.querySelector("#numeros").value;
+    var arrayLista = lista.split(",")
+    
+    arrayLista.sort(
+        function (a, b) {
+        return a - b;
+    });
+    
+    for (i = 0; i != arrayLista.length; i++) {
+        resultado += " " + arrayLista[i];
+    }
+
+    var descobrirPosicao = document.querySelector("#descobrirPosicao").value;
+    var i
+    var j
+    var focoPosicao = 1
+
+    for (j = 0; descobrirPosicao != arrayLista[j]; j++) {
+        focoPosicao++
+    }
+
+    document.getElementById("lista").innerHTML = `numeros na ordem: ${resultado}`;
+    document.getElementById("posicao").innerHTML = `O número escolhido está na posição: ${focoPosicao}`;
+}
+    </script>
+</html>

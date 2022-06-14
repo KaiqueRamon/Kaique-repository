@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular células</h1>
+    Digite o Valor <br>
+    <input type="text" id="val"><br>
+    <br><button onclick="cacl()">Calcular</button>
+    <p id="resu"></p>
+</body>
+    <script>
+        function cacl(){
+            let valor = parseInt(document.querySelector("#val").value)
+            let list = [100,50,20,10,5,2,1];
+            let res = '';
+            let cont = 0;
+            let mostraResu = document.querySelector("#resu");
+            for (let i = 0; valor > 0; i++) {
+                if (valor >= list[i]) {
+                    
+                
+                 while(valor >= list[i]){
+                        cont += 1;
+                        valor -= list[i];
+                        console.log(cont)
+                    }
+                }
+        
+                res += ''+cont+' NOTAS DE  '+list[i]+' <br>'
+                cont = 0;
+            }
+
+            mostraResu.innerHTML = res;
+                
+                
+            }
+    </script>
+</html>
