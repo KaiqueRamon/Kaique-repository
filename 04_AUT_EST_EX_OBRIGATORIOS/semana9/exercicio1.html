@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1</title>
+</head>
+<body>
+   <p> Digite um numero de 3 digito:</p>
+   <form action="#">
+    <input id="n" type="number"  min="100" max="999"  >
+    <input type="submit" onclick="conta()">
+    <p id="resul"></p>
+    </form>
+
+</body>
+<script>
+    function conta(){
+
+        var numero = parseInt(document.querySelector("#n").value);
+        if(numero >= 100 && numero <= 999){
+        if(numero % 2 == 0){
+            var res = ("par")
+
+        }else{
+            var res = ("impar")
+        }
+
+
+        var resulta = document.getElementById("resul");
+            resulta.innerHTML = "Resultado:" + res;
+    }
+}
+    
+</script>
+</html>
